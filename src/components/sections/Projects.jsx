@@ -35,7 +35,11 @@ export const Projects = () => {
                             ))}
                     </div>
                     <div className="flex justify-between items-center">
-                        <a href="#https://francinehouston.github.io/color-matching-memory-game/" className="text-blue-400 hover:text-blue transition-colors my-4">View Project</a>
+                        <a 
+                        href="https://francinehouston.github.io/color-matching-memory-game/" 
+                        target= "_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors">View Project</a>
                     </div>
 
   
@@ -59,7 +63,11 @@ export const Projects = () => {
                             ))}
                     </div>
                     <div className="flex justify-between items-center">
-                        <a href="#https://babelbot-80382e0f3acb.herokuapp.com/" className="text-blue-400 hover:text-blue transition-colors my-4">View Project</a>
+                        <a 
+                        href="https://babelbot-80382e0f3acb.herokuapp.com/" 
+                        target= "_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors">View Project</a>
                     </div>
 
   
@@ -82,7 +90,11 @@ export const Projects = () => {
                             ))}
                     </div>
                     <div className="flex justify-between items-center">
-                        <a href="#https://bucketlist-travel-planner-app-47ba3fe9ce17.herokuapp.com/" className="text-blue-400 hover:text-blue transition-colors my-4">View Project</a>
+                        <a 
+                        href="https://bucketlist-travel-planner-app-47ba3fe9ce17.herokuapp.com/" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors">View Project</a>
                     </div>
 
   
@@ -105,7 +117,11 @@ export const Projects = () => {
                             ))}
                     </div>
                     <div className="flex justify-between items-center">
-                        <a href="#https://food-diary-api-app.netlify.app/" className="text-blue-400 hover:text-blue transition-colors my-4">View Project</a>
+                        <a 
+                        href="https://food-diary-api-app.netlify.app/" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors">View Project</a>
                     </div>
 
   
@@ -129,7 +145,10 @@ export const Projects = () => {
                             ))}
                     </div>
                     <div className="flex justify-between items-center">
-                        <a href="#https://francinehouston.github.io/color-matching-memory-game/" className="text-blue-400 hover:text-blue transition-colors my-4">View Project</a>
+                        <a href="https://francinehouston.github.io/color-matching-memory-game/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors">View Project</a>
                     </div>
 
   
