@@ -147,7 +147,7 @@ export const Projects = () => {
                     <div className="flex justify-between items-center">
                         <a href="https://weather-outfit.netlify.app"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener norcodeeferrer"
                         className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors">View Project</a>
                     </div>
 

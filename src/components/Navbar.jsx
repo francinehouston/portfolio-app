@@ -36,6 +36,10 @@ useEffect(() => {
         {" "}Contact{" "}
          </a>
 
+         <a href="#resume" className="text-gray-300 hover:text-white transition-colors"> 
+        {" "}Resume{" "}
+         </a>
+
 </div>
 
                 </div>
