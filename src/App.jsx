@@ -26,7 +26,10 @@ function App() {
     <About/>
     <Projects/>
     <Contact/>
+    {/*Add this section wrapper*/}
+    <section id="resume">
     <ResumeButton/>
+    </section>
   </div>
 </>
   );
