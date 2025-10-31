@@ -3,6 +3,7 @@ import React from "react";
 
 export function ResumeButton() {
   const handleOpenResume = () => {
+    console.log("Resume button clicked");
     // Place fullstackengineerresume.pdf inside the "public" folder of your React project
     window.open("/fullstackengineerresume.pdf", "_blank", "noopener,noreferrer");
   };
