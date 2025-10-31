@@ -1,13 +1,15 @@
 import {RevealOnScroll} from "../RevealOnScroll";
-import React ,{useRef} from "react";
+import React from "react";
 
-export default function ResumeButton() {
+export function ResumeButton() {
   const handleOpenResume = () => {
-    // Place resume.pdf inside the "public" folder of your React project
-    window.open("/resume.pdf", "_blank", "noopener,noreferrer");
+    // Place fullstackengineerresume.pdf inside the "public" folder of your React project
+    window.open("/fullstackengineerresume.pdf", "_blank", "noopener,noreferrer");
   };
 
   return (
+       <RevealOnScroll>
+    
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <button
         onClick={handleOpenResume}
@@ -16,5 +18,6 @@ export default function ResumeButton() {
         View Resume
       </button>
     </div>
+    </RevealOnScroll>
   );
 }
