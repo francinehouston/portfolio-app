@@ -11,7 +11,7 @@ import { About } from './components/sections/About';
 import { Projects } from './components/sections/Projects';
 import { Contact } from './components/sections/Contact';
 import { ResumeButton } from './components/sections/Resume';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';  
 
 function App() {
  const [isLoaded, setIsLoaded] = useState(false);
