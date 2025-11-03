@@ -18,7 +18,9 @@ function App() {
  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Router basename="/portfolio-app"> {/* Important for GitHub Pages */}
+    <Router 
+    // basename="/portfolio-app"
+    > {/* Important for GitHub Pages */}
 
 
 
@@ -29,8 +31,7 @@ function App() {
     <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
     <Routes>
-    {/* Main page */}
-
+    {/* Home page */}
     <Route 
     path="/" 
     element={
@@ -45,8 +46,6 @@ function App() {
 
     {/*Resume page*/}
     <Route path="/resume" element={<ResumeButton />} />
-   
- 
     </Routes>
     </div>
     </Router>
