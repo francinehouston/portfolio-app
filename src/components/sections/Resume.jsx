@@ -3,9 +3,10 @@ import React from "react";
 
 export function ResumeButton() {
   const handleOpenResume = () => {
-    console.log("Resume button clicked");
+    // console.log("Resume button clicked");
     // Place fullstackengineerresume.pdf inside the "public" folder of your React project
-    window.open("/fullstackengineerresume.pdf", "_blank", "noopener,noreferrer");
+    const resumePath = `${import.meta.env.BASE_URL}fullstackengineerresume.pdf`;
+    window.open(resumePath, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -22,3 +23,4 @@ export function ResumeButton() {
     </RevealOnScroll>
   );
 }
+
