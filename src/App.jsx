@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Router 
-    // basename="/portfolio-app"
+    basename="/portfolio-app"
     > {/* Important for GitHub Pages */}
 
 
