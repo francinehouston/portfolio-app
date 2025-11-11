@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 export const Navbar = ({menuOpen, setMenuOpen}) => {
 
@@ -12,9 +12,10 @@ useEffect(() => {
             <div className="max-w-5xl mx-auto px-4">
                 <div className="flex-justify-between items-center h-16">
 
-                    <Link to="/" className="font-mono text-xl font-bold text-white">
-            francine<span className="text-blue-500"> houston</span>
-          </Link>
+                <a href="#home" className="font-mono text-xl font-bold text-white">
+                        
+                        {" "}francine<span className="text-blue-500"> houston</span>{""}
+                    </a>
 
                     <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen((prev) => !prev)}>
                         &#9776;
@@ -38,13 +39,13 @@ useEffect(() => {
          </a>
 
 
-         {/* ✅ Use Link for separate route */}
+         {/* ✅ Use Link for separate route
          <Link
               to="/resume"
               className="text-gray-300 hover:text-white transition-colors"
             >
               Resume
-            </Link>
+            </Link> */}
 
 </div>
 
@@ -53,3 +54,4 @@ useEffect(() => {
         </nav>
     );
 };
+
