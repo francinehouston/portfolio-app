@@ -28,6 +28,15 @@ hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">
       hover:translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10">
      Contact Me
      </a>
+
+     {/* ✅ NEW — Download Resume Button */}
+     <a
+        href={`${process.env.PUBLIC_URL}/fullstackengineerresume.pdf`}
+        download
+        className="bg-purple-500 text-white px-6 py-3 rounded font-medium transition hover:bg-green-600 hover:translate-y-0.5 hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]"
+>
+    Download Resume
+</a>
 </div>
 
 </div>
