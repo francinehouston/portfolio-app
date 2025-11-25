@@ -18,25 +18,25 @@ I'm a full stack software engineer with a passion for creating innovative soluti
 manufacturing where I would like to bring teamwork, creativity, communication and problem-solving skills to the tech industry. I am excited to leverage my 
 unique background to build impactful software solutions that make a difference. 
 </p>
-<div className="flex justify-center space-x-4">
-<a href="#projects" className="bg-blue-500 text-white py-3 py-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 
+<div className="flex flex-wrap justify-center gap-4">
+<a href="#projects" className="bg-blue-500 text-white px-6 py-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 
 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">
      View Projects
      </a>
 
-     <a href="#contact" className="border border-blue-500/50 text-blue-500 py-3 py-6 rounded font-medium transition-all duration-200
+     <a href="#contact" className="border border-blue-500/50 text-blue-500 px-6 py-6 rounded font-medium transition-all duration-200
       hover:translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10">
      Contact Me
      </a>
 
-     {/* ✅ NEW — Download Resume Button */}
-     <a
-        href={`${process.env.PUBLIC_URL}/fullstackengineerresume.pdf`}
-        download
-        className="bg-purple-500 text-white px-6 py-3 rounded font-medium transition hover:bg-green-600 hover:translate-y-0.5 hover:shadow-[0_0_15px_rgba(34,197,94,0.4)]"
->
-    Download Resume
-</a>
+     <a 
+     href={`${import.meta.env.BASE_URL}fullstackengineerresume.pdf`}
+     download="fullstackengineerresume.pdf"
+     className="bg-green-500 text-white px-6 py-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 
+     hover:shadow-[0_0_15px_rgba(34,197,94,0.4)] hover:bg-green-600">
+     Download Resume
+     </a>
+  
 </div>
 
 </div>
