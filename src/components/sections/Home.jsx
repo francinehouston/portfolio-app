@@ -1,6 +1,26 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Home = () => {
+    const handleResumeDownload = async (e) => {
+        e.preventDefault();
+        try {
+            const resumeUrl = `${import.meta.env.BASE_URL}fullstackengineerresume.pdf`;
+            const response = await fetch(resumeUrl);
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'fullstackengineerresume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            // Fallback: open in new tab if download fails
+            window.open(`${import.meta.env.BASE_URL}fullstackengineerresume.pdf`, '_blank');
+        }
+    };
+
     return (
     <section 
     id="home" 
@@ -31,9 +51,9 @@ hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">
 
      <a 
      href={`${import.meta.env.BASE_URL}fullstackengineerresume.pdf`}
-     download="fullstackengineerresume.pdf"
+     onClick={handleResumeDownload}
      className="bg-green-500 text-white px-6 py-6 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 
-     hover:shadow-[0_0_15px_rgba(34,197,94,0.4)] hover:bg-green-600">
+     hover:shadow-[0_0_15px_rgba(34,197,94,0.4)] hover:bg-green-600 cursor-pointer">
      Download Resume
      </a>
   
